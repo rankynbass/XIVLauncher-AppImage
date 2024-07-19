@@ -5,19 +5,15 @@ on:
   
 jobs:
   build:
-    runs-on: ubuntu-latest
-    container: ubuntu:20.04
+    runs-on: ubuntu-20.04
 
     steps:
       
       - uses: actions/checkout@v4
       - name: Packaging
         run: |
-          apt update
-          # ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime
-          DEBIAN_FRONTEND=noninteractive apt install -y fuse curl sudo apt-utils modprobe
-          # dpkg-reconfigure --frontend noninteractive tzdata
-          modprobe fuse
+          sudo apt update
+          sudo apt install fuse curl
           ./make-appimage.sh
         
       - name: Upload the artifact
