@@ -20,3 +20,5 @@ cp XIVLauncher.Core-latest-x86_64.* xivlauncher/
 cp install.sh xivlauncher/install.sh
 cp xivlauncher.png xivlauncher/xivlauncher.png
 cp XIVLauncher-AppImage.desktop xivlauncher/XIVLauncher-AppImage.desktop
+
+tar -czf XIVLauncher-AppImage.tar.gz xivlauncher/*
