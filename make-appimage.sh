@@ -14,6 +14,7 @@ curl -L $APPIMGBLDR -o appimage-builder
 chmod +x appimage-builder
 ./appimage-builder --skip-test
 
+# Package the artifact
 mkdir -p xivlauncher
 cp XIVLauncher.Core-latest-x86_64.* xivlauncher/
 cp install.sh xivlauncher/install.sh
