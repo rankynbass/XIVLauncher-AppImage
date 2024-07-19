@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=XIVLauncher.Core (AppImage)
-Comment=Custom launcher for Final Fantasy XIV. AppImage.
-Exec=
-Icon=
-Terminal=false
-Type=Application
-Categories=Game;
-StartupWMClass=XIVLauncher.Core

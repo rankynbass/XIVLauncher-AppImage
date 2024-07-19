@@ -6,14 +6,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: ubuntu:20.04
 
     steps:
       
       - uses: actions/checkout@v4
       - name: Packaging
         run: |
-          sudo apt update
-          sudo apt install fuse curl
+          dpkg --add-architecture i386 && apt update
+          ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime
+          DEBIAN_FRONTEND=noninteractive apt install -y tzdata aptitude git sudo fuse curl
+          dpkg-reconfigure --frontend noninteractive tzdata
           ./make-appimage.sh
         
       - name: Upload the artifact
