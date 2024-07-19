@@ -1,0 +1,19 @@
+name: Build XIVLauncher AppImage
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      
+      - uses: actions/checkout@v4
+      - name: Packaging
+        run: |
+          sudo apt update
+          sudo apt install fuse curl
+          ./make-appimage.sh
+        
+      - name: Upload the artifact
