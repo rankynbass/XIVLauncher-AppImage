@@ -51,6 +51,9 @@ AppDir:
     - libxss1:amd64
     - x11-common
     - xkb-data
+    - dash:amd64
+    - libgstreamer1.0-0:amd64
+    - gstreamer1.0-tools:amd64
   files:
     include: []
     exclude:

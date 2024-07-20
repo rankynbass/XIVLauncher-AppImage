@@ -1,7 +1,7 @@
 /AppDir/*
 /appimage-build
 /appimage-builder
-/XIVLauncher.Core.tar.gz
+*.tar.gz
 /XIVLauncher.Core-*
 /xivlauncher/*
 *.log
