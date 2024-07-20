@@ -1,6 +1,6 @@
 #!/bin/bash
 # Use this script to just download the resources if you want to generate a new AppImageBuilder.yml file
-XLCORE=https://github.com/goatcorp/XIVLauncher.Core/releases/download/1.1.0/XIVLauncher.Core.tar.gz
+XLCORE=https://github.com/rankynbass/XIVLauncher.Core/releases/latest/download/XIVLauncher.Core.tar.gz
 APPIMGBLDR=https://github.com/AppImageCrafters/appimage-builder/releases/download/v1.1.0/appimage-builder-1.1.0-x86_64.AppImage
 
 # Get XLCore

@@ -1,5 +1,5 @@
 #!/bin/bash
-XLCORE=https://github.com/goatcorp/XIVLauncher.Core/releases/download/1.1.0/XIVLauncher.Core.tar.gz
+XLCORE=https://github.com/rankynbass/XIVLauncher.Core/releases/latest/download/XIVLauncher.Core.tar.gz
 APPIMGBLDR=https://github.com/AppImageCrafters/appimage-builder/releases/download/v1.1.0/appimage-builder-1.1.0-x86_64.AppImage
 
 # Get XLCore
@@ -17,7 +17,7 @@ chmod +x appimage-builder
 
 # Package the artifact
 mkdir -p xivlauncher
-cp XIVLauncher.Core-latest-x86_64.* xivlauncher/
+cp XIVLauncher-RB-latest-x86_64.* xivlauncher/
 cp install.sh xivlauncher/install.sh
 cp uninstall.sh xivlauncher/uninstall.sh
 cp xivlauncher.png xivlauncher/xivlauncher.png

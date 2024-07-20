@@ -3,8 +3,8 @@ version: 1
 AppDir:
   path: /home/rankyn/projects/XIVLauncher-AppImage/AppDir
   app_info:
-    id: dev.goats.xivlauncher
-    name: XIVLauncher.Core
+    id: dev.rankyn.xivlauncher
+    name: XIVLauncher-RB
     icon: xivlauncher
     version: latest
     exec: opt/xivlauncher-core/XIVLauncher.Core
