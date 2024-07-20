@@ -4,6 +4,7 @@ APPIMGBLDR=https://github.com/AppImageCrafters/appimage-builder/releases/downloa
 
 # Get XLCore
 curl -L "$XLCORE" -o XIVLauncher.Core.tar.gz
+rm -rf AppDir/*
 mkdir -p AppDir/opt/xivlauncher-core
 tar -xf XIVLauncher.Core.tar.gz -C AppDir/opt/xivlauncher-core
 mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps
@@ -18,6 +19,7 @@ chmod +x appimage-builder
 mkdir -p xivlauncher
 cp XIVLauncher.Core-latest-x86_64.* xivlauncher/
 cp install.sh xivlauncher/install.sh
+cp uninstall.sh xivlauncher/uninstall.sh
 cp xivlauncher.png xivlauncher/xivlauncher.png
 cp XIVLauncher-AppImage.desktop xivlauncher/XIVLauncher-AppImage.desktop
 
