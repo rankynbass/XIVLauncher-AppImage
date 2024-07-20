@@ -32,7 +32,6 @@ AppDir:
     - libsdl2-2.0-0:amd64
     - libsecret-common:amd64
     - libdecoration0:amd64
-    - libunwind8:amd64
     - alsa-topology-conf
     - alsa-ucm-conf
     - libasound2:amd64
