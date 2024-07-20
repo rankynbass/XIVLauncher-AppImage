@@ -3,7 +3,7 @@ version: 1
 AppDir:
   path: /home/rankyn/projects/XIVLauncher-AppImage/AppDir
   app_info:
-    id: XIVLauncher.Core
+    id: dev.goats.xivlauncher
     name: XIVLauncher.Core
     icon: xivlauncher
     version: latest
@@ -25,12 +25,32 @@ AppDir:
     - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security main restricted
     - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security universe
     - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security multiverse
+    - sourceline: deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/ubuntu/20.04/prod
+        focal main
     include:
     - libc6:amd64
     - libsdl2-2.0-0:amd64
     - libsecret-common:amd64
     - libdecoration0:amd64
     - libunwind8:amd64
+    - alsa-topology-conf
+    - alsa-ucm-conf
+    - libasound2:amd64
+    - libasound2-data
+    - libasyncns0:amd64
+    - libflac8:amd64
+    - libogg0:amd64
+    - libpulse0:amd64
+    - libsndfile1:amd64
+    - libvorbis0a:amd64
+    - libvorbisenc2:amd64
+    - libwayland-cursor0:amd64
+    - libwayland-egl1:amd64
+    - libwrap0:amd64
+    - libxkbcommon0:amd64
+    - libxss1:amd64
+    - x11-common
+    - xkb-data
   files:
     include: []
     exclude:
