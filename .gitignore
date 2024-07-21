@@ -5,3 +5,4 @@
 /XIVLauncher.Core-*
 /xivlauncher/*
 *.log
+/squashfs-root

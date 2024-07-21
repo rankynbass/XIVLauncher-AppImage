@@ -5,16 +5,15 @@ on:
   
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    container: registry.gitlab.steamos.cloud/proton/sniper/sdk
 
     steps:
       
       - uses: actions/checkout@v4
       - name: Packaging
         run: |
-          sudo apt update
-          sudo apt install fuse curl
-          ./download-resources.sh
+          apt update && apt install -y gtk-update-icon-cache
           ./make-appimage.sh
         
       - name: Upload the artifact

@@ -14,21 +14,16 @@ AppDir:
     - amd64
     allow_unauthenticated: true
     sources:
-    - sourceline: deb http://archive.ubuntu.com/ubuntu/ focal main restricted
-    - sourceline: deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted
-    - sourceline: deb http://archive.ubuntu.com/ubuntu/ focal universe
-    - sourceline: deb http://archive.ubuntu.com/ubuntu/ focal-updates universe
-    - sourceline: deb http://archive.ubuntu.com/ubuntu/ focal multiverse
-    - sourceline: deb http://archive.ubuntu.com/ubuntu/ focal-updates multiverse
-    - sourceline: deb http://archive.ubuntu.com/ubuntu/ focal-backports main restricted
-        universe multiverse
-    - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security main restricted
-    - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security universe
-    - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security multiverse
+    - sourceline: deb http://deb.debian.org/debian bullseye main contrib non-free
+    - sourceline: deb http://deb.debian.org/debian-debug bullseye-debug main contrib non-free
+    - sourceline: deb http://deb.debian.org/debian-debug bullseye-proposed-updates-debug main contrib non-free
+    - sourceline: deb http://security.debian.org/debian-security bullseye-security main contrib non-free
+    - sourceline: deb https://repo.steampowered.com/steamrt3/apt sniper main contrib non-free
     include:
     - libc6:amd64
     - libsdl2-2.0-0:amd64
-    - libsecret-common:amd64
+    - libsecret-1-0:amd64
+    - libsecret-common
     - libdecoration0:amd64
     - alsa-topology-conf
     - alsa-ucm-conf
