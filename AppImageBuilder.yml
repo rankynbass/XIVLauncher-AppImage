@@ -28,7 +28,8 @@ AppDir:
     include:
     - libc6:amd64
     - libsdl2-2.0-0:amd64
-    - libsecret-common:amd64
+    - libsecret-1-0:amd64
+    - libsecret-common
     - libdecoration0:amd64
     - alsa-topology-conf
     - alsa-ucm-conf
