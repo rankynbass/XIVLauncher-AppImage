@@ -1,6 +1,6 @@
 #!/bin/bash
 ./appimage-builder --appimage-extract
-./squashfs-root/AppRun --skip-tests
+DEBIAN_FRONTEND=noninteractive ./squashfs-root/AppRun --skip-tests
 
 # Package the artifact
 mkdir -p xivlauncher
