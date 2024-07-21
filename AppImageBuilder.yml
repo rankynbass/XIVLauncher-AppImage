@@ -46,10 +46,6 @@ AppDir:
     - libwrap0:amd64
     - libxkbcommon0:amd64
     - libxss1:amd64
-    - libaria2-0:amd64
-    - libc-ares2:amd64
-    - libssh2-1:amd64
-    - aria2
     - x11-common
     - xkb-data
   files:
