@@ -25,8 +25,6 @@ AppDir:
     - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security main restricted
     - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security universe
     - sourceline: deb http://security.ubuntu.com/ubuntu/ focal-security multiverse
-    - sourceline: deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/ubuntu/20.04/prod
-        focal main
     include:
     - libc6:amd64
     - libsdl2-2.0-0:amd64
