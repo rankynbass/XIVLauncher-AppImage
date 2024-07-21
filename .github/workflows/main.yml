@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: https://registry.gitlab.steamos.cloud/proton/sniper/sdk
+    container: registry.gitlab.steamos.cloud/proton/sniper/sdk
 
     steps:
       
