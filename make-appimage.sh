@@ -1,5 +1,6 @@
 #!/bin/bash
-./appimage-builder --skip-test
+./appimage-builder --appimage-extract
+./squashfs-root/AppRun --skip-tests
 
 # Package the artifact
 mkdir -p xivlauncher

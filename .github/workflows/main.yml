@@ -13,8 +13,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Packaging
         run: |
-          sudo apt update
-          sudo apt install fuse curl
           ./download-resources.sh
           ./make-appimage.sh
         
