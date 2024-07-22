@@ -21,28 +21,8 @@ AppDir:
     - sourceline: deb https://repo.steampowered.com/steamrt3/apt sniper main contrib non-free
     include:
     - libc6:amd64
-    - libsdl2-2.0-0:amd64
     - libsecret-1-0:amd64
     - libsecret-common
-    - libdecoration0:amd64
-    - alsa-topology-conf
-    - alsa-ucm-conf
-    - libasound2:amd64
-    - libasound2-data
-    - libasyncns0:amd64
-    - libflac8:amd64
-    - libogg0:amd64
-    - libpulse0:amd64
-    - libsndfile1:amd64
-    - libvorbis0a:amd64
-    - libvorbisenc2:amd64
-    - libwayland-cursor0:amd64
-    - libwayland-egl1:amd64
-    - libwrap0:amd64
-    - libxkbcommon0:amd64
-    - libxss1:amd64
-    - x11-common
-    - xkb-data
   files:
     include: []
     exclude:
