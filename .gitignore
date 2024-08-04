@@ -3,6 +3,7 @@
 /appimage-builder
 *.tar.gz
 /XIVLauncher.Core-*
+/XIVLauncher-RB-*
 /xivlauncher/*
 *.log
 /squashfs-root
