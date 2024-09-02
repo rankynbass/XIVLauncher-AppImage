@@ -1,4 +1,5 @@
 # XIVLauncher.Core in an AppImage package
+![workflow](https://github.com/rankynbass/XIVLauncher-AppImage/actions/workflows/main.yml/badge.svg)
 
 Just a simple repo set up to make XIVLauncher into an AppImage. This uses appimage-builder, which means that we can specify dependencies in the AppImageBuilder.yml file. I'm using Ubuntu 20.04 at the moment, just for compatibility, but it *does* include libc, so theoretically, we could use any linux distro, including arch.
 
