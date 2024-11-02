@@ -3,7 +3,7 @@ SELF=$(readlink -f "$0")
 HERE=${SELF%/*}
 cd "$HERE"
 
-XLCORE=https://github.com/goatcorp/XIVLauncher.Core/releases/download/1.1.0/XIVLauncher.Core.tar.gz
+XLCORE=https://github.com/goatcorp/XIVLauncher.Core/releases/download/1.1.1/XIVLauncher.Core.tar.gz
 APPIMGBLDR=https://github.com/AppImageCrafters/appimage-builder/releases/download/v1.1.0/appimage-builder-1.1.0-x86_64.AppImage
 ARIA=https://github.com/rankynbass/aria2-static-build/releases/latest/download/aria2-static.tar.gz
 
