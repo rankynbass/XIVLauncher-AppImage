@@ -67,7 +67,7 @@ create-appimage config-name="xivlauncher": extract-appimagetool (download config
     BUSYBOX_INSTALL_PATH = File.join(BINDIR, "busybox")
     ARIA2C_INSTALL_PATH = File.join(BINDIR, "aria2c")
 
-    UPDATE_DATA = "gh-releases-zsync|spiteful-fox|xivlauncher-appimage|#{XIVLAUNCHER_RELEASE_TYPE}|#{XIVLAUNCHER_NAME}-x86_64.AppImage.zsync"
+    UPDATE_DATA = "gh-releases-zsync|rankyn|XIVLauncher.Core|#{XIVLAUNCHER_RELEASE_TYPE}|#{XIVLAUNCHER_NAME}-x86_64.AppImage.zsync"
 
     mkdir_p File.join(Dir.pwd, "appdir")
     cp_r "AppDir.template", APPDIR
