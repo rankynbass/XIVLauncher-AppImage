@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+unset LD_LIBRARY_PATH
+unset PATH
+export LD_LIBRRARY_PATH=$OLD_LD_LIBRARY_PATH
+export PATH=$OLD_PATH
+xdg-open $@

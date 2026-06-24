@@ -11,6 +11,7 @@ src_dir := absolute_path("src")
 appimagetool := tool_dir + "/appimagetool"
 aria2c := tool_dir + "/aria2c"
 busybox := tool_dir + "/busybox"
+xdg_open := tool_dir + "/xdg-open"
 config_file := absolute_path("config.json")
 cache_dir := absolute_path(".cache")
 imgui_version := "v1.92.2b-docking"
@@ -66,6 +67,7 @@ create-appimage config-name="xivlauncher": extract-appimagetool (download config
     EXECUTABLE_INSTALL_PATH = File.join(APPDIR, "AppRun") #File.join(BINDIR, XIVLAUNCHER_EXEC_NAME)
     BUSYBOX_INSTALL_PATH = File.join(BINDIR, "busybox")
     ARIA2C_INSTALL_PATH = File.join(BINDIR, "aria2c")
+    XDG_OPEN_INSTALL_PATH = File.join(BINDIR, "xdg-open")
 
     UPDATE_DATA = "gh-releases-zsync|rankynbass|XIVLauncher.Core|#{XIVLAUNCHER_RELEASE_TYPE}|#{XIVLAUNCHER_NAME}-x86_64.AppImage.zsync"
 
@@ -76,6 +78,7 @@ create-appimage config-name="xivlauncher": extract-appimagetool (download config
 
     cp "{{ aria2c }}", ARIA2C_INSTALL_PATH
     cp "{{ busybox }}", BUSYBOX_INSTALL_PATH
+    cp "{{ xdg_open }}", XDG_OPEN_INSTALL_PATH
     `"#{BUSYBOX_INSTALL_PATH}" --list`.split("\n").each{|e| ln_sf BUSYBOX_INSTALL_PATH.relative_to(BINDIR), File.join(BINDIR, e.strip)}
 
 
